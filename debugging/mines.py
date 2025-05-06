@@ -72,8 +72,8 @@ class Minesweeper:
         while True:
             self.print_board()
             try:
-                x = int(input("Enter x coordinate: "))
-                y = int(input("Enter y coordinate: "))
+                x = int(input("\nEnter X coordinate: "))
+                y = int(input("Enter Y coordinate: "))
                 if not (0 <= x < self.width and 0 <= y < self.height):
                     print("Coordinates out of bounds. Try again.")
                     input("Press Enter to continue...")
@@ -90,7 +90,7 @@ class Minesweeper:
                 print("Invalid input. Please enter numbers only.")
                 input("Press Enter to continue...")
             except EOFError:
-                clear_screen()
+                print("Interrupted game.")
                 break
 
 if __name__ == "__main__":
