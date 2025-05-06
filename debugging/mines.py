@@ -25,7 +25,7 @@ class Minesweeper:
         for y in range(self.height):
             print(f"{y:2} |", end='')
             for x in range(self.width):
-                cell = 'o'
+                cell = '●'
                 if reveal or self.revealed[y][x]:
                     if (x, y) in self.mines:
                         cell = '*'
@@ -80,11 +80,11 @@ class Minesweeper:
                     continue
                 if not self.reveal_cell(x, y):
                     self.print_board(reveal=True)
-                    print("💥 Game Over! You hit a mine.")
+                    print("\n💥 Game Over! You hit a mine.")
                     break
                 if self.check_win():
                     self.print_board(reveal=True)
-                    print("🎉 Congratulations! You cleared the minefield.")
+                    print("\n🎉 Congratulations! You cleared the minefield.")
                     break
             except ValueError:
                 print("Invalid input. Please enter numbers only.")
