@@ -15,4 +15,3 @@ This project is about learning to use AI tools for code debugging.
 * [print_arguments.py](https://github.com/gwendalminguy/holbertonschool-chatgpt-introduction/tree/main/debugging/print_arguments.py), a script printing each command-line argument.
 
 * [tic.py](https://github.com/gwendalminguy/holbertonschool-chatgpt-introduction/tree/main/debugging/tic.py), a script for a simple Tic Tac Toe game.
-
